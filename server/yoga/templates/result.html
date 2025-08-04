@@ -1,0 +1,19 @@
+<!-- templates/result.html -->
+ {% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pose Result</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="result-box">
+    <h2>Pose Checked: {{ asana|title }}</h2>
+    <p>Result: <strong>{{ result }}</strong></p>
+    <a href="{% url 'upload' %}">Try Another</a>
+  </div>
+</body>
+</html>
